@@ -26,19 +26,29 @@
         mysqli_select_db($conexion, $nombre) or die ("No se encuentra la BBDD");    //Si no se encuetra la BBDD manda un mensje de error
         $consulta="SELECT * FROM datos_personales";     //La consulta en sql seleccionamos los datos y tabla a mostrar
         $resultado=mysqli_query($conexion, $consulta);  //Genera un array con el resultado de la consulta
-        
-        while ($fila=mysqli_fetch_row($resultado)) {    //Para ver todos los registros de la tabla
+        ?>
+       
 
-            echo $fila[0] . " ";
-            echo $fila[1] . " ";
-            echo $fila[2] . " ";
-            echo $fila[3];
-            echo "<br>";
-        };
+        <table>
+            <thead>
+                <th>NIF</th>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Edad</th>
+            </thead>
+        <?php   while ($fila=mysqli_fetch_row($resultado)) {    //Para ver todos los registros de la tabla ?>
+            <tr>
+                <td><?php echo $fila[0] ?></td>
+                <td><?php echo $fila[1] ?></td>
+                <td><?php echo $fila[2] ?></td>
+                <td><?php echo $fila[3] ?></td>
+            </tr>
+        
+       <?php }
 
         mysqli_close($conexion);        //Cierra la conexión
 
-    ?>
+    ?></table>
 
 </body>
 </html>
