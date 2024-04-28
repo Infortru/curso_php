@@ -17,3 +17,5 @@
             <input type="submit" value="Buscar" class="boton enviar">
             <input type="reset" value="Limpiar" class="boton limpiar">
         </form>
+    </body>
+</html>
