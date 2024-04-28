@@ -14,5 +14,6 @@
             <h2>Formulario de búsqueda</h2>
             <label for="buscar">Buscar: </label><input type="text" name="buscar" pklaceholder="Introduce un término de búsqueda">
             <br><br>
-            <input type="submit" value="Buscar">
+            <input type="submit" value="Buscar" class="boton enviar">
+            <input type="reset" value="Limpiar" class="boton limpiar">
         </form>

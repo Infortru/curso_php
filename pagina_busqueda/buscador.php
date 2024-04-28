@@ -1,3 +1,4 @@
+<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 
 <?php
     require_once("../acceso_BBDD/acceso_BBDD.php");
