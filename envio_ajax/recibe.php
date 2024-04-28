@@ -1,5 +1,5 @@
 <?php
-    //Este archivo se encargs de recibir los documentos del formulario y enviarlo a una carpeta para alamcenarlos
+    //Este archivo se encarga de recibir los documentos del formulario y enviarlo a una carpeta para alamcenarlos
 
     if(mime_content_type($_FILES["archivo"]["tmp_name"])!="image/jpeg" && mime_content_type($_FILES["archivo"]["tmp_name"])!="image/png"){
         echo "Formato de archivo no válido";

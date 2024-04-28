@@ -17,6 +17,7 @@
         <br><br>
         <input type="submit" name="enviar">
     </form>
+
     <script src="ajax.js"></script>
     
 </body>
