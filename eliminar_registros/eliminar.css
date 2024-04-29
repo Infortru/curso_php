@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+form {
+    background-color: #DDDDDD;
+    width: 300px;
+    height: 100%;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 25px;
+}
+h2 {
+    padding: 10px;
+}
+.boton {
+    background-color: #AAAAAA;
+    border-radius: 3px;
+    padding: 2px 5px;
+    font-weight: 700;
+}
+.boton:hover {
+    background-color: #888888;
+    color: #D5D5D5;
+}
+input[type="text"] {
+    border-radius: 5px;
+    margin-left: 10px;
+}
+label {
+    font-weight: 600;
+    text-align: left;
+}
+table {
+    background-color: #F5F5F5;
+    border: 5px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 30px;
+    border-collapse: collapse;
+}
+th:nth-child(even){
+    background-color: #AAAAAA;
+    border: 1.2px solid black;
+    border-bottom: 2px solid black;
+}
+th:nth-child(odd) {
+    background-color: #CCCCCC;
+    border: 1.2px solid black;
+    border-bottom: 2px solid black;
+}
+th {
+    padding: 10px;
+    
+}
+tr:nth-child(even) {
+    background-color: #AAAAAA;
+    border: 1px solid black;
+}
+td:last-child {
+    text-align: right;
+    
+}
+td {
+    padding: 3px 5px;
+    border: .7px solid black;
+}
+
