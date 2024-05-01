@@ -20,6 +20,7 @@
 
         <table width="50%">
             <thead>
+                <th>REFERENCIA<th>
                 <th>SECCIÓN</th>
                 <th>ARTÍCULO</th>
                 <th>FECHA</th>
@@ -28,6 +29,7 @@
             </thead>
         <?php   while ($fila=mysqli_fetch_array($resultado, MYSQLI_ASSOC)) {    //Para ver todos los registros de la tabla ?>
             <tr>
+                <td><?php echo $fila["ID_ARTÍCULO"] ?></td>
                 <td><?php echo $fila["SECCIÓN"] ?></td>
                 <td><?php echo $fila["NOMBRE"] ?></td>
                 <td><?php echo $fila["FECHA"] ?></td>
