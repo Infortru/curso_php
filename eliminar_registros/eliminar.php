@@ -3,7 +3,7 @@
 <?php
     require_once("../acceso_BBDD/acceso_BBDD.php");
 
-    $id=$_POST["articulo"];
+    $id=mysqli_real_escape_string($conexion, $_POST["articulo"]);
 
     $borrado="DELETE FROM articulos WHERE ID_ARTÍCULO='$id'";
     $resultado=mysqli_query($conexion, $borrado);  

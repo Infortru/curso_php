@@ -5,7 +5,7 @@
 
     $busca=$_GET["buscar"];
 
-    $consulta="SELECT * FROM articulos WHERE NOMBRE like '%$busca%'";     //La consulta en sql seleccionamos los datos y tabla a mostrar
+    $consulta="SELECT * FROM articulos WHERE NOMBRE like '%$busca%'";   //La consulta en sql seleccionamos los datos y tabla a mostrar
     $resultado=mysqli_query($conexion, $consulta);  //Genera un array con el resultado de la consulta
     ?>
    
