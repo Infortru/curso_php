@@ -13,6 +13,13 @@
 <?php
 
     session_start();
+    if(!isset($_SESSION["usuario"])) {
+
+        header("location:login.php");
+    };
+
+    echo "Bienvenido" . $_SESSION["usuario"]. "<br><br>";
+    echo "<a href='cierra_sesion.php'><input type='button' value='Cerrar sesión'></a>"
 
 ?>
     
