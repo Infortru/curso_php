@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <h1>Busca usuario</h1>
+    <form action="busqueda_PDO.php" method="post">
+        <div class="izquierda"><label for="nombre">Usuario: </label></div>
+        <div class="derecha"><input type="text" name="nombre" id="nombre"></div>
+        <br><br>
+        <div class="izquierda"><label for="contra">Contraseña: </label></div>
+        <div class="derecha"><input type="password" id="contra" name="contra"></div>
+        <br><br>
+        <div class="centro"><input type="submit"name="enviar" value="Aceptar"></div>
+    </form>
+    
+</body>
+</html>
